@@ -26,6 +26,17 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def update
+    @article = Article.find(params[:id])
+    if @article.update(article_params)
+      flash[:notice] = "Article has been updated."
+      redirect_to article_path(@article)
+    else
+      flash.now[:danger] = "Article failed to update."
+      render :edit
+    end
+  end
+
   protected
 
   def resource_not_found
