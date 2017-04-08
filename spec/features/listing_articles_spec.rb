@@ -1,7 +1,7 @@
 require "rails_helper"
 include ActionView::Helpers::TextHelper
 
-RSpec.feature "Listing Artciles" do
+RSpec.feature "Listing Articles" do
   before do
     @article1 = Article.create(title: "Test Article One", body: "Example Body information")
     @article2 = Article.create(title: "Test Article Two", body: "Here is some body copy. Here is some body copy.  Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy.  Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy.  Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy.  Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy. Here is some body copy.")
